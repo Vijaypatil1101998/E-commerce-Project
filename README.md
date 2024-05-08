@@ -1,7 +1,7 @@
 ﻿# E-commerce-Project
  
  #Description:
-This project is an e-commerce platform built using React.js with user registration functionality. It allows users to browse products, search for products with auto-suggestion and cached results, filter products based on various criteria such as color, and gender, and sort products by price. The project utilizes lazy loading for product categories, Redux Toolkit for state management, and bootstrap for responsive design. Additionally, it includes a backend server built with Node.js
+This project is an e-commerce platform built using React.js with user registration functionality. It allows users to browse products, search for products with auto-suggestion and cached results, filter products based on various criteria such as color, and gender, and sort products by price. The project utilizes lazy loading for product categories, Redux Toolkit for state management, and bootstrap for responsive design. Additionally, it includes a backend server built with Express.js
 
 #Features:
 Product listing with categories
@@ -18,8 +18,7 @@ Integration with Redux Toolkit for state management
 Responsive design using Bootstrap
 Git version control with proper README.md
 
-#Installation Clone the repository: git clone
-https://github.com/Vijaypatil1101998/E-commerce-Project.git
+#Installation Clone the repository: git clone https://github.com/Vijaypatil1101998/E-commerce-Project.git
 Navigate to the backend directory: cd backend.
 Install backend dependencies: npm install.
 Start the backend server: npm start
