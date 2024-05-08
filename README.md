@@ -30,7 +30,7 @@ Start the frontend server: npm run dev
 Make sure frontend application runs on 5000 port and backend application runs on 8080 port no.
 
 #Usage:
-Access the application at http://localhost:5000 in your web browser. Navigate through different pages using the navigation links. Use the search bar, filters, and sorting options to browse products. Register new users using the registration feature.
+Access the application at http://localhost:5173/ in your web browser. Navigate through different pages using the navigation links. Use the search bar, filters, and sorting options to browse products. Register new users using the registration feature.
 
 #Note: Ensure that the Git branch is named 'main'. Additionally, follow the instructions provided in the README.md for executing the backend server.
 
