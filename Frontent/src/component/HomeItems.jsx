@@ -2,7 +2,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { bagActions } from "../store/BagSlice";
 import { IoIosAddCircle } from "react-icons/io";
 import { MdDelete } from "react-icons/md";
-
 const HomeItems = ({ item }) => {
   const bagItems = useSelector((store) => store.bag);
   const elementCount = bagItems.indexOf(item.id) >= 0;

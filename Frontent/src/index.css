@@ -136,7 +136,28 @@ header {
 .sale_item {
   width: 250px;
 }
+/* sorting dropdown */
+.SortingDropdown-container {
+  position: absolute;
+  top: 85px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
 
+.SortingDropdown-label {
+  margin-right: 10px;
+}
+
+.SortingDropdown-select {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+}
 /* Footer styles */
 .footer_container {
   padding: 30px 20px 40px; /* Adjust padding for better spacing */
@@ -175,7 +196,7 @@ header {
   margin: 40px 10%;
 }
 .item-container {
-  width: 250px;
+  width: 206px;
   margin: 10px;
 }
 .item-image {
@@ -718,5 +739,18 @@ button:hover {
     font-size: 20px; 
     top: 8px;
     right: 14px;
+  }
+  .SortingDropdown-container {
+    top: 129px;
+  }
+
+  .SortingDropdown-label {
+    margin-bottom: 5px;
+    width: 75px;
+  }
+
+  .SortingDropdown-select {
+    width: 100%;
+    padding: 3px;
   }
 }

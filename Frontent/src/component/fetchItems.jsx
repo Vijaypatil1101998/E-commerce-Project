@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { itemsActions } from "../store/ItemSlice";
 import { fetchStatusActions } from "../store/FetchStatusSlice";
+import { sortSliceActions } from "../store/SortSlice";
 
 const FetchItems = () => {
   const fetchStatus = useSelector((store) => store.fetchStatus);
@@ -19,6 +20,7 @@ const FetchItems = () => {
         dispatch(fetchStatusActions.markFetchDone());
         dispatch(fetchStatusActions.markFetchingFinished());
         dispatch(itemsActions.addInitialItems(items[0]));
+        dispatch(sortSliceActions.setProducts(items[0]));
       });
 
     return () => {

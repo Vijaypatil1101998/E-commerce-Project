@@ -12,6 +12,22 @@ import RegistrationForm from "./component/RegistrationForm.jsx";
 import SignInForm from "./component/SignInForm.jsx";
 import Filter from "./component/Filter.jsx";
 import CheckoutPage from "./component/CheckoutPage.jsx";
+const filterPaths = [
+  "/Filter",
+  "/Red",
+  "/White",
+  "/Black",
+  "/Womens",
+  "/Mens",
+  "/priceLowToHigh",
+  "/priceHighToLow",
+];
+
+const filterRoutes = filterPaths.map((path) => ({
+  path,
+  element: <Filter />,
+}));
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,33 +50,10 @@ const router = createBrowserRouter([
         element: <SignInForm />,
       },
       {
-        path: "/Filter",
-        element: <Filter />,
-      },
-      {
-        path: "/Red",
-        element: <Filter />,
-      },
-      {
-        path: "/White",
-        element: <Filter />,
-      },
-      {
-        path: "/Black",
-        element: <Filter />,
-      },
-      {
-        path: "/Womens",
-        element: <Filter />,
-      },
-      {
-        path: "/Mens",
-        element: <Filter />,
-      },
-      {
         path: "/Checkout",
         element: <CheckoutPage />,
       },
+      ...filterRoutes,
     ],
   },
 ]);
