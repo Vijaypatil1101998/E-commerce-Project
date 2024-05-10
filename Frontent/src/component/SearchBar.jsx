@@ -31,7 +31,7 @@ const SearchBar = () => {
       </span>
       <input
         className="search_input"
-        placeholder="Search for products, brands and more"
+        placeholder="Search for brands and more"
         onChange={onChange}
         value={value}
       />
